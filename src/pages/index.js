@@ -36,7 +36,6 @@ const Home = () => (
           content="A forum/blog application made with Gatsby."
         ></meta>
         <title>Techscienceonline | Forum</title>
-        {/* TODO: Update the URL when it goes live */}
         <link rel="canonical" href="https://techscienceonline.com/" />
       </Helmet>
 

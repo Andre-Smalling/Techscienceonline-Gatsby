@@ -3,7 +3,6 @@ module.exports = {
     title: `Techscienceonline Forum`,
     description: `A forum/blog application made with Gatsby.`,
     author: `Vaibhav Khulbe`,
-    // TODO: Change the URL
     url: `https://techscienceonline.com/`,
   },
   plugins: [

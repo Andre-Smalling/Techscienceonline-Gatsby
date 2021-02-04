@@ -4,19 +4,18 @@ import React from "react"
 import Pagination from "../components/Pagination.component"
 
 export default function ForumContent({ data, pageContext }) {
-  const forumContent = data.allMarkdownRemark.nodes
+  // const forumContent = data.allMarkdownRemark.nodes
 
   return (
     <>
       <Pagination
         pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
-        totalCount={data.sliceMasters.totalCount}
         currentPage={pageContext.currentPage || 1}
         skip={pageContext.skip}
         base="/forums"
       />
       <div>
-        {forumContent.map(forum => (
+        {/* {forumContent.map(forum => (
           <div>
             <Link to={`/forum/${forum.id}`}>
               <h2>
@@ -25,7 +24,7 @@ export default function ForumContent({ data, pageContext }) {
             </Link>
             <p className="description">{forum.frontmatter.description}</p>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   )
