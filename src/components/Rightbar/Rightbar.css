@@ -1,0 +1,65 @@
+.rightbar {
+  display: block;
+}
+
+.rightbar-recent {
+  display: block;
+  height: 18rem;
+  width: 20rem;
+  margin: 8rem 3rem;
+  background-color: var(--primaryPurpleFaded);
+  border-radius: 1rem;
+}
+
+.rightbar-recent h3 {
+  padding: 2rem;
+  color: #000;
+}
+
+.rightbar-recent-line {
+  width: 15%;
+  margin: -1rem 2rem;
+  border-bottom: 3px solid var(--primaryPurple);
+}
+
+.rightbar-recent-list {
+  margin: 3rem 0;
+  padding: 0 3rem;
+  list-style: none;
+}
+
+.rightbar-recent-list-item {
+  display: flex;
+  margin-bottom: -1rem;
+}
+
+.rightbar-recent-list-item svg {
+  margin: 0 -1rem;
+  color: var(--primaryPurple);
+}
+
+.rightbar-recent-list-item li {
+  margin: 0 2rem;
+  color: #000;
+}
+
+.rightbar-recent-list-item-link {
+  text-decoration: none;
+}
+
+.rightbar-recent-list-item-link:hover {
+  transform: translateX(10px);
+  transition: all 0.2s;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  margin: -7rem 2rem;
+}
+
+footer p {
+  margin: 0 1rem;
+  color: var(--grey-60);
+  font-size: 0.8rem;
+}
