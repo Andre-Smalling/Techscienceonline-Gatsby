@@ -25,12 +25,12 @@
 .rightbar-recent-list {
   margin: 3rem 0;
   padding: 0 3rem;
-  list-style: none;
 }
 
 .rightbar-recent-list-item {
   display: flex;
   margin-bottom: -1rem;
+  list-style: none;
 }
 
 .rightbar-recent-list-item svg {

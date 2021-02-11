@@ -32,7 +32,10 @@ export default function Sidebar() {
         <p className="sidebar-registration-form-title">Login now</p>
         <div className="sidebar-registration-form-inputs">
           <AiOutlineUser className="sidebar-registration-form-user-icon" />
-          <label for="form-email" className="sidebar-registration-form-labels">
+          <label
+            htmlFor="form-email"
+            className="sidebar-registration-form-labels"
+          >
             Email
           </label>
           <input
@@ -46,7 +49,7 @@ export default function Sidebar() {
         <div className="sidebar-registration-form-inputs">
           <FiKey className="sidebar-registration-form-user-icon" />
           <label
-            for="form-password"
+            htmlFor="form-password"
             className="sidebar-registration-form-labels"
           >
             Password

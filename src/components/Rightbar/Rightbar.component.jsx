@@ -33,8 +33,8 @@ export default function Rightbar() {
                 const { title, path } = post.node.frontmatter
 
                 return (
-                  <ul className="rightbar-recent-list">
-                    <li className="rightbar-recent-list-item">
+                  <div className="rightbar-recent-list">
+                    <ul className="rightbar-recent-list-item">
                       <BsChat />
                       <li>
                         <Link
@@ -44,8 +44,8 @@ export default function Rightbar() {
                           {title} &#8250;
                         </Link>
                       </li>
-                    </li>
-                  </ul>
+                    </ul>
+                  </div>
                 )
               })}
             </div>

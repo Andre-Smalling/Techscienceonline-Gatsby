@@ -4,6 +4,7 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import { IoChatbubblesOutline } from "@react-icons/all-files/io5/IoChatbubblesOutline"
 
 import "./ForumContent.css"
+import { node } from "prop-types"
 
 // The `ForumContent` component renders the data from GraphQL to the Gatsby app
 export default function ForumContentComponent() {
@@ -31,6 +32,7 @@ export default function ForumContentComponent() {
                   tags
                   path
                 }
+                id
               }
             }
           }
@@ -75,10 +77,7 @@ export default function ForumContentComponent() {
 
                     {/* Render tags */}
                     <p className="forum-content-feed-card-info-tags">
-                      {tags &&
-                        tags
-                          .split("")
-                          .map(t => <span key={`${title}-${t}`}>{t}</span>)}
+                      {tags && tags.split("").map(t => <span>{t}</span>)}
                     </p>
 
                     {/* Show or remove the `desc` based on the click state of the link */}

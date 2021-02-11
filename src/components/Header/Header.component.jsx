@@ -12,7 +12,7 @@ export default function Header() {
       <header className="header">
         <div className="header-search">
           <AiOutlineSearch className="header-search-icon" />
-          <label for="global-search">Search</label>
+          <label htmlFor="global-search">Search</label>
           <input type="text" placeholder="Search..." id="global-search" />
         </div>
         <div className="header-cart-container">
