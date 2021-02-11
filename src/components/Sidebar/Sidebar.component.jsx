@@ -12,7 +12,7 @@ import { BiBriefcase } from "@react-icons/all-files/bi/BiBriefcase"
 import { IoChatbubblesSharp } from "@react-icons/all-files/io5/IoChatbubblesSharp"
 import { BsNewspaper } from "@react-icons/all-files/bs/BsNewspaper"
 
-import logo from "../../../public/static/Images/logo/logo.png"
+import logo from "../../images/logo/logo.png"
 
 import "./Sidebar.css"
 
