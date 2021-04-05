@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-import "./index.css"
+// import "./index.css"
 
 import LayoutComponent from "../components/Layout/Layout.component"
 
@@ -13,11 +13,8 @@ import ForumComponent from "../components/Forum/Forum.component"
 
 import RightbarComponent from "../components/Rightbar/Rightbar.component"
 
-// const renderLoader = () => <p>Loading...</p>
-
 // The homepage component which renders all other sub-components
 const Home = () => (
-  // <Suspense fallback={renderLoader}>
   <LayoutComponent>
     {/* Helmet is used to improve SEO performance */}
     <Helmet>
@@ -36,14 +33,13 @@ const Home = () => (
     </Helmet>
 
     {/* The container element contains the sub-components */}
-    <div className="container">
+    <div className="container relative bg-gray-50">
       <HeaderComponent />
-      <SidebarComponent />
-      <ForumComponent />
-      <RightbarComponent />
+      {/* <SidebarComponent /> */}
+      {/* <ForumComponent /> */}
+      {/* <RightbarComponent /> */}
     </div>
   </LayoutComponent>
-  // </Suspense>
 )
 
 export default Home
