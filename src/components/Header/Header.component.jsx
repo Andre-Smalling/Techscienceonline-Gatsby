@@ -27,7 +27,7 @@ export default function Header() {
     //   </header>
     // </div>
 
-    <div className="flex space-x-80 items-center justify-end px-10 py-4 bg-white shadow rounded font-body">
+    <div className="flex space-x-80 items-center justify-end py-4 bg-white shadow rounded font-body w-full">
       <img className="w-40 h-full" src={logo} />
       <div className="flex items-center justify-start py-2.5 pl-5 pr-72 bg-gray-200 rounded-full">
         <div className="inline-flex space-x-2.5 items-center w-24 h-5 font-body">

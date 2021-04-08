@@ -7,6 +7,16 @@ import LayoutComponent from "../components/Layout/Layout.component"
 
 import HeaderComponent from "../components/Header/Header.component"
 
+import TrendingComponent from "../components/TrendingComponent/TrendingComponent"
+
+import ThreadsAndDiscussionsComponent from "../components/ThreadsAndDiscussionsComponent/ThreadsAndDiscussionsComponent"
+
+import RecentTopicsComponent from "../components/RecentTopicsComponent/RecentTopicsComponent"
+
+import CategoriesComponent from "../components/CategoriesComponent/CategoriesComponent"
+
+import FooterComponent from "../components/FooterComponent/FooterComponent"
+
 import SidebarComponent from "../components/Sidebar/Sidebar.component"
 
 import ForumComponent from "../components/Forum/Forum.component"
@@ -33,8 +43,14 @@ const Home = () => (
     </Helmet>
 
     {/* The container element contains the sub-components */}
-    <div className="container relative bg-gray-50">
+    <div className="relative bg-gray-50 max-w-max">
       <HeaderComponent />
+      <TrendingComponent />
+
+      <ThreadsAndDiscussionsComponent />
+      <RecentTopicsComponent />
+      <CategoriesComponent />
+      <FooterComponent />
       {/* <SidebarComponent /> */}
       {/* <ForumComponent /> */}
       {/* <RightbarComponent /> */}
