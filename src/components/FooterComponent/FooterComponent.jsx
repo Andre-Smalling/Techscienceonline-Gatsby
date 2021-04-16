@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 export default function FooterComponent() {
@@ -7,9 +8,12 @@ export default function FooterComponent() {
       style={{ marginLeft: "76rem", width: "auto" }}
     >
       <div className="inline-flex space-x-2.5 items-center justify-end w-full h-5">
-        <p className="w-12 h-full text-base leading-normal text-gray-400">
+        <Link
+          className="w-12 h-full text-base leading-normal text-gray-400"
+          to="/"
+        >
           Home
-        </p>
+        </Link>
         <p className="w-16 h-full text-base leading-normal text-gray-400">
           About
         </p>

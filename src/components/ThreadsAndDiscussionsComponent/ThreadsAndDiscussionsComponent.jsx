@@ -1,6 +1,7 @@
 import React from "react"
 
 import ChatIcon from "@heroicons/react/outline/ChatAlt2Icon"
+import { Link } from "gatsby"
 // import FilledChatIcon from "@heroicons/react/solid/ChatAlt2Icon"
 
 export default function ThreadsAndDiscussionsComponent() {
@@ -30,7 +31,7 @@ export default function ThreadsAndDiscussionsComponent() {
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
             <img
               className="w-10 h-full shadow border rounded-full border-gray-200"
-              src="https://i.pravatar.cc/300"
+              src="https://i.pravatar.cc"
             />
             <div className="flex space-x-1 items-center justify-end w-80 h-6">
               <p className="w-52 h-5 text-base leading-normal text-gray-500 font-body">
@@ -49,7 +50,10 @@ export default function ThreadsAndDiscussionsComponent() {
           </p>
         </div>
 
-        <div className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6">
+        <Link
+          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
+          to="/blogpage-with-image-template"
+        >
           <p className="text-2xl font-semibold text-gray-700 font-headline">
             Any idea about the award scholarship from Zeqr?
           </p>
@@ -61,7 +65,7 @@ export default function ThreadsAndDiscussionsComponent() {
             There seems to be a problem while I go through the application. I’m
             not...
           </p>
-        </div>
+        </Link>
       </div>
 
       {/* CARD 2 */}
@@ -79,7 +83,7 @@ export default function ThreadsAndDiscussionsComponent() {
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
             <img
               className="w-10 h-full shadow border rounded-full border-gray-200"
-              src="https://i.pravatar.cc/300"
+              src="https://i.pravatar.cc"
             />
             <div className="flex space-x-1 items-center justify-end w-80 h-6">
               <p className="w-52 h-5 text-base leading-normal text-gray-500 font-body">
@@ -98,7 +102,10 @@ export default function ThreadsAndDiscussionsComponent() {
           </p>
         </div>
 
-        <div className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6">
+        <Link
+          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6 cursor-pointer"
+          to="/blogpage-with-image-template"
+        >
           <p className="text-2xl font-semibold text-gray-700 font-headline">
             Is it normal to forget concepts within weeks to months?
           </p>
@@ -110,7 +117,7 @@ export default function ThreadsAndDiscussionsComponent() {
             my ability to forget things so easily. I’m currently about to wrap
             up a college quarter...
           </p>
-        </div>
+        </Link>
       </div>
 
       {/* CARD 3 */}
@@ -128,7 +135,7 @@ export default function ThreadsAndDiscussionsComponent() {
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
             <img
               className="w-10 h-full shadow border rounded-full border-gray-200"
-              src="https://i.pravatar.cc/300"
+              src="https://i.pravatar.cc"
             />
             <div className="flex space-x-1 items-center justify-end w-80 h-6">
               <p className="w-52 h-5 text-base leading-normal text-gray-500 font-body">
@@ -147,7 +154,10 @@ export default function ThreadsAndDiscussionsComponent() {
           </p>
         </div>
 
-        <div className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6">
+        <Link
+          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
+          to="/blogpage-with-image-template"
+        >
           <p className="text-2xl font-semibold text-gray-700 font-headline">
             The new added Classroom management for subs.
           </p>
@@ -158,7 +168,7 @@ export default function ThreadsAndDiscussionsComponent() {
             I’ve been a full-time teacher for 10 years, but I want to focus on
             finishing grad school next year as a full-time student instead...
           </p>
-        </div>
+        </Link>
       </div>
     </div>
   )
