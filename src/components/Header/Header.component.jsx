@@ -12,22 +12,6 @@ import { Link } from "gatsby"
 // The `Header` components features the searchbar and right navigation
 export default function Header() {
   return (
-    // <div>
-    //   <header className="header">
-    //     <div className="header-search">
-    //       <AiOutlineSearch className="header-search-icon" />
-    //       <label htmlFor="global-search">Search</label>
-    //       <input type="text" placeholder="Search..." id="global-search" />
-    //     </div>
-    //     <div className="header-cart-container">
-    //       <FiShoppingCart className="header-cart" />
-    //     </div>
-    //     <a href="#" className="header-login">
-    //       Login
-    //     </a>
-    //   </header>
-    // </div>
-
     <div
       className="flex space-x-80 items-center justify-end py-4 bg-white shadow rounded font-body"
       style={{ margin: "0 10rem" }}

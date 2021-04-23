@@ -36,7 +36,7 @@ const BlogpageWithImageTemplate = () => {
             style={{ width: 700, height: 158 }}
           >
             <Link
-              className="h-5 text-base leading-normal text-gray-500 cursor-pointer"
+              className="h-5 text-base leading-normal text-gray-500 cursor-pointer font-body"
               style={{ paddingTop: "1rem" }}
               to="/"
             >
@@ -52,25 +52,25 @@ const BlogpageWithImageTemplate = () => {
               className="inline-flex space-x-8 items-center justify-end w-80 h-6"
               style={{ marginLeft: "1.3rem" }}
             >
-              <p className="text-base leading-normal text-indigo-700">
+              <p className="text-base leading-normal text-indigo-700 font-body">
                 #learning
               </p>
               <div className="flex space-x-5 items-center justify-end w-60 h-full">
                 <div className="flex space-x-1.5 items-center justify-end w-16 h-full">
                   <ShareIcon className="text-gray-600" />
-                  <p className="w-2/3 text-base leading-normal text-gray-600">
+                  <p className="w-2/3 text-base leading-normal text-gray-600 font-body">
                     Share
                   </p>
                 </div>
                 <div className="flex space-x-1.5 items-center justify-end w-20 h-full">
                   <ReportIcon className="w-4 h-4 text-gray-600" />
-                  <p className="w-12 text-base leading-normal text-gray-600">
+                  <p className="w-12 text-base leading-normal text-gray-600 font-body">
                     Report
                   </p>
                 </div>
                 <div className="flex space-x-1.5 items-center justify-end w-14 h-5/6">
                   <ViewsIcon className="w-4 h-4 text-gray-600" />
-                  <p className="w-7 h-full text-base leading-normal text-gray-600">
+                  <p className="w-7 h-full text-base leading-normal text-gray-600 font-body">
                     103
                   </p>
                 </div>
@@ -90,17 +90,19 @@ const BlogpageWithImageTemplate = () => {
                 src="https://i.pravatar.cc"
               />
               <div className="flex space-x-1.5 items-center justify-end h-5">
-                <p className="w-28 h-full text-base font-medium leading-normal text-gray-600">
-                  {" "}
+                <Link
+                  className="w-28 h-full text-base font-medium leading-normal text-gray-600 font-body"
+                  to="/author-profile-template"
+                >
                   Arlene McCoy
-                </p>
-                <p className="w-14 h-5 text-base leading-normal text-gray-500">
+                </Link>
+                <p className="w-14 h-5 text-base leading-normal text-gray-500 font-body">
                   3h ago
                 </p>
               </div>
             </div>
             <p
-              className="text-base leading-normal text-gray-600"
+              className="text-base leading-normal text-gray-600 font-body"
               style={{
                 width: 645,
                 height: 142,
@@ -147,7 +149,7 @@ const BlogpageWithImageTemplate = () => {
               ></input>
             </div>
             <a
-              className="w-40 flex items-center justify-center flex-1 h-full px-5 pt-2 pb-3 border rounded-full border-indigo-700 text-base leading-normal text-center text-indigo-700 cursor-pointer"
+              className="w-40 flex items-center justify-center flex-1 h-full px-5 pt-2 pb-3 border rounded-full border-indigo-700 text-base leading-normal text-center text-indigo-700 cursor-pointer font-body"
               href="#"
               style={{ margin: "1rem -9rem" }}
             >
@@ -174,21 +176,21 @@ const BlogpageWithImageTemplate = () => {
             className="flex space-x-2 justify-end"
             style={{ width: 653.54, height: 24 }}
           >
-            <p className="w-full h-4 text-base font-medium leading-normal text-gray-600">
+            <p className="w-full h-4 text-base font-medium leading-normal text-gray-600 font-body">
               Darrell Steward
             </p>
             <p
-              className="text-base leading-normal text-gray-600"
+              className="text-base leading-normal text-gray-600 font-body"
               style={{ width: "400%" }}
             >
               Check out this article on Ebbinghaus' forgetting curve. Might give
               you <br />
-              <span style={{ margin: "0 -8.5rem" }}>
+              <span className="font-body" style={{ margin: "0 -8.5rem" }}>
                 some insights of how things are actually happening (along with
                 some examples): <br />
               </span>
               <a
-                className="text-base leading-normal underline text-indigo-700"
+                className="text-base leading-normal underline text-indigo-700 font-body"
                 href="https://www.mindtools.com/pages/article/forgetting-curve.htm"
                 style={{ margin: "0 -8.5rem" }}
               >
@@ -196,19 +198,19 @@ const BlogpageWithImageTemplate = () => {
               </a>
               <div className="space-x-2.5" style={{ margin: "1rem -8.5rem" }}>
                 <a
-                  className="w-8 text-base leading-normal text-gray-500"
+                  className="w-8 text-base leading-normal text-gray-500 font-body"
                   href="#"
                 >
                   Like
                 </a>
                 <a
-                  className="w-10 text-base leading-normal text-gray-500"
+                  className="w-10 text-base leading-normal text-gray-500 font-body"
                   href="#"
                 >
                   Reply
                 </a>
                 <a
-                  className="w-1/6 text-base leading-normal text-gray-500"
+                  className="w-1/6 text-base leading-normal text-gray-500 font-body"
                   href="#"
                 >
                   2h
@@ -223,14 +225,14 @@ const BlogpageWithImageTemplate = () => {
           style={{ width: 655, height: 138, margin: "6rem 2rem" }}
         >
           <p
-            className="absolute text-base leading-normal text-gray-600"
+            className="absolute text-base leading-normal text-gray-600 font-body"
             style={{ width: 611, left: 44, top: 31 }}
           >
             teachers/professor encourage note-taking in order to help you
             refresh yourself.
           </p>
           <p
-            className="absolute text-base leading-normal text-gray-600"
+            className="absolute text-base leading-normal text-gray-600 font-body"
             style={{ width: 611, left: 44, top: 56 }}
           >
             It's also why you're typically given some time to study for a test
@@ -240,18 +242,24 @@ const BlogpageWithImageTemplate = () => {
             className="inline-flex space-x-2.5 items-center justify-end h-6 absolute"
             style={{ left: 44, top: 114 }}
           >
-            <p className="w-7 text-base leading-normal text-gray-500">Like</p>
-            <p className="w-10 text-base leading-normal text-gray-500">Reply</p>
-            <p className="w-1/6 text-base leading-normal text-gray-500">1h</p>
+            <p className="w-7 text-base leading-normal text-gray-500 font-body">
+              Like
+            </p>
+            <p className="w-10 text-base leading-normal text-gray-500 font-body">
+              Reply
+            </p>
+            <p className="w-1/6 text-base leading-normal text-gray-500 font-body">
+              1h
+            </p>
           </div>
           <p
-            className="absolute right-0 top-0 text-base leading-normal text-gray-600"
+            className="absolute right-0 top-0 text-base leading-normal text-gray-600 font-body"
             style={{ width: 507, margin: "0.4rem -0.5rem" }}
           >
             This is pretty much completely normal and exactly why
           </p>
           <p
-            className="h-4 absolute text-base font-medium leading-normal text-gray-600"
+            className="h-4 absolute text-base font-medium leading-normal text-gray-600 font-body"
             style={{ left: 44, top: 6 }}
           >
             Wade Warren
@@ -267,7 +275,7 @@ const BlogpageWithImageTemplate = () => {
           style={{ width: 655, height: 138, margin: "-4rem 2rem" }}
         >
           <p
-            className="absolute text-base leading-normal text-gray-600"
+            className="absolute text-base leading-normal text-gray-600 font-body"
             style={{ width: 611, left: 44, top: 31 }}
           >
             learning. My education professors believed in a full constructivist
@@ -278,18 +286,24 @@ const BlogpageWithImageTemplate = () => {
             className="inline-flex space-x-2.5 items-center justify-end h-6 absolute"
             style={{ left: 44, top: 114 }}
           >
-            <p className="w-7 text-base leading-normal text-gray-500">Like</p>
-            <p className="w-10 text-base leading-normal text-gray-500">Reply</p>
-            <p className="w-1/6 text-base leading-normal text-gray-500">1h</p>
+            <p className="w-7 text-base leading-normal text-gray-500 font-body">
+              Like
+            </p>
+            <p className="w-10 text-base leading-normal text-gray-500 font-body">
+              Reply
+            </p>
+            <p className="w-1/6 text-base leading-normal text-gray-500 font-body">
+              1h
+            </p>
           </div>
           <p
-            className="absolute right-0 top-0 text-base leading-normal text-gray-600"
+            className="absolute right-0 top-0 text-base leading-normal text-gray-600 font-body"
             style={{ width: 507, margin: "0.4rem -3rem" }}
           >
             I agree with taking notes as important in adolescent and adult
           </p>
           <p
-            className="h-4 absolute text-base font-medium leading-normal text-gray-600"
+            className="h-4 absolute text-base font-medium leading-normal text-gray-600 font-body"
             style={{ left: 44, top: 6 }}
           >
             Brooklyn Simmons
@@ -313,7 +327,7 @@ const BlogpageWithImageTemplate = () => {
           <div className="w-full h-5/6">
             <div className="flex items-center justify-start flex-1 h-full pl-5 pr-8 pt-5 pb-7 bg-white shadow rounded">
               <div className="inline-flex flex-col space-y-5 items-start justify-end flex-1 h-full">
-                <p className="w-full h-36 text-base leading-normal text-gray-800">
+                <p className="w-full h-36 text-base leading-normal text-gray-800 font-body">
                   The goal of #learning is to provide a series of threads and
                   discussions. Make sure all the content you post here are
                   sensible, are answered correctly and follow our rules and
@@ -324,7 +338,7 @@ const BlogpageWithImageTemplate = () => {
                     <p className="w-10 h-5 text-xl leading-loose text-gray-800 font-headline">
                       1.2k
                     </p>
-                    <p className="w-full h-5 text-base leading-normal text-gray-800">
+                    <p className="w-full h-5 text-base leading-normal text-gray-800 font-body">
                       Members
                     </p>
                   </div>
@@ -332,12 +346,12 @@ const BlogpageWithImageTemplate = () => {
                     <p className="w-5/6 h-5 text-xl leading-loose text-center text-gray-800 font-headline">
                       171
                     </p>
-                    <p className="w-full h-5 text-base leading-normal text-center text-gray-800">
+                    <p className="w-full h-5 text-base leading-normal text-center text-gray-800 font-body">
                       Online
                     </p>
                   </div>
                 </div>
-                <a className="flex items-center justify-center flex-1 h-full px-5 py-3 shadow border rounded-full border-indigo-700 text-base font-medium text-center text-indigo-700 cursor-pointer">
+                <a className="flex items-center justify-center flex-1 h-full px-5 py-3 shadow border rounded-full border-indigo-700 text-base font-medium text-center text-indigo-700 cursor-pointer font-body">
                   Join learning
                 </a>
               </div>

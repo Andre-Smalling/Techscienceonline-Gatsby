@@ -40,7 +40,7 @@ const SignIn = () => {
             Login
           </p>
           <p
-            className="text-2xl leading-10 text-gray-600"
+            className="text-2xl leading-10 text-gray-600 font-body"
             style={{ width: 675 }}
           >
             Welcome back! Login with your credentials and enjoy new threads and
@@ -54,14 +54,18 @@ const SignIn = () => {
           <div className="inline-flex flex-col space-y-10 items-center justify-end w-96">
             <div className="flex flex-col space-y-11 items-center justify-end w-full h-72">
               <div className="flex flex-col space-y-4 items-center justify-end w-full h-28">
-                <p className="text-3xl font-medium text-gray-600">Email</p>
+                <p className="text-3xl font-medium text-gray-600 font-body">
+                  Email
+                </p>
                 <input
                   className="opacity-70 w-full h-16 border-2 rounded border-gray-400"
                   type="email"
                 />
               </div>
               <div className="flex flex-col space-y-4 items-center justify-end w-full h-28">
-                <p className="text-3xl font-medium text-gray-600">Password</p>
+                <p className="text-3xl font-medium text-gray-600 font-body">
+                  Password
+                </p>
                 <input
                   className="opacity-70 w-full h-16 border-2 rounded border-gray-400"
                   type="password"
@@ -71,7 +75,7 @@ const SignIn = () => {
             <div className="w-full h-1/5">
               <div className="flex items-center justify-center flex-1 h-full px-28 py-6 bg-indigo-700 shadow rounded">
                 <a
-                  className="flex-1 h-full text-2xl font-semibold text-center text-white cursor-pointer"
+                  className="flex-1 h-full text-2xl font-semibold text-center text-white cursor-pointer font-body"
                   href="#"
                 >
                   Sign in
@@ -83,7 +87,7 @@ const SignIn = () => {
             className="flex space-x-24 items-center justify-end"
             style={{ width: 431, height: 65 }}
           >
-            <p className="w-10 text-2xl leading-9 text-center text-gray-600">
+            <p className="w-10 text-2xl leading-9 text-center text-gray-600 font-body">
               OR
             </p>
             <div className="w-72 h-full">
@@ -93,7 +97,7 @@ const SignIn = () => {
                   href="#"
                 >
                   <GoogleLogo className="w-7 h-8 rounded-lg" />
-                  <p className="w-52 text-2xl leading-9 text-gray-600">
+                  <p className="w-52 text-2xl leading-9 text-gray-600 font-body">
                     Sign in with Google
                   </p>
                 </a>
@@ -101,9 +105,12 @@ const SignIn = () => {
             </div>
           </div>
         </div>
-        <p className="text-2xl leading-9" style={{ margin: "-4rem 0rem" }}>
+        <p
+          className="text-2xl leading-9 font-body"
+          style={{ margin: "-4rem 0rem" }}
+        >
           Don’t have an account?
-          <a className="text-indigo-700" href="/signup">
+          <a className="text-indigo-700 font-body" href="/signup">
             &nbsp;Sign up
           </a>
           .

@@ -26,21 +26,21 @@ export default function ThreadsAndDiscussionsComponent() {
             <div className="grid grid-cols-3 space-x-5 items-center justify-end w-64 h-12 absolute right-0 bottom-0">
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <ClockIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-20 h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-20 h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Activity
                 </p>
               </div>
 
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <PhotoIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Photos
                 </p>
               </div>
 
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <GroupIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Groups
                 </p>
               </div>
@@ -49,21 +49,21 @@ export default function ThreadsAndDiscussionsComponent() {
             <div className="grid grid-cols-3 space-x-5 items-center justify-end w-64 h-12 relative right-0 bottom-0">
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <JobIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Jobs
                 </p>
               </div>
 
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <ChatIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Chat
                 </p>
               </div>
 
               <div className="inline-flex flex-col space-y-2.5 items-center justify-end w-20 h-full">
                 <BlogIcon className="w-5 h-5 text-gray-500" />
-                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800">
+                <p className="w-full h-5 text-xl font-medium leading-tight text-center text-gray-800 font-body">
                   Activity
                 </p>
               </div>
