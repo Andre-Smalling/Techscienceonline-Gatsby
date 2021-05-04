@@ -43,7 +43,7 @@ const Home = () => (
     </Helmet>
 
     {/* The container element contains the sub-components */}
-    <div className="relative bg-gray-50 max-w-max">
+    <div className="relative bg-gray-50 max-w-ma">
       <HeaderComponent />
       <TrendingComponent />
 

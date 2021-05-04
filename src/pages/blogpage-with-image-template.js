@@ -1,22 +1,25 @@
-import { Link } from "gatsby"
-import React from "react"
-
-import HeaderComponent from "./../components/Header/Header.component"
-import RecentTopicsComponent from "./../components/RecentTopicsComponent/RecentTopicsComponent"
-import FooterComponent from "./../components/FooterComponent/FooterComponent"
-
-import ShareIcon from "@heroicons/react/solid/ShareIcon"
+import HashIcon from "@heroicons/react/outline/HashtagIcon"
 import ReportIcon from "@heroicons/react/solid/ExclamationIcon"
 import ViewsIcon from "@heroicons/react/solid/EyeIcon"
-import HashIcon from "@heroicons/react/outline/HashtagIcon"
+import ShareIcon from "@heroicons/react/solid/ShareIcon"
+import { Link } from "gatsby"
+import React from "react"
+import FooterComponent from "./../components/FooterComponent/FooterComponent"
+import HeaderComponent from "./../components/Header/Header.component"
+import RecentTopicsComponent from "./../components/RecentTopicsComponent/RecentTopicsComponent"
+
+import "./blogpage.css"
 
 const BlogpageWithImageTemplate = () => {
   return (
     <div className="bg-gray-50">
       <HeaderComponent />
-      <div style={{ marginLeft: "20rem", marginTop: "2rem", width: "690px" }}>
+      <div
+        className="blogpage-component"
+        style={{ marginLeft: "20rem", marginTop: "2rem", width: "690px" }}
+      >
         <img
-          className="rounded object-cover"
+          className="blogpage-component-img rounded object-cover"
           style={{
             width: 678,
             height: 348.96,
@@ -24,7 +27,7 @@ const BlogpageWithImageTemplate = () => {
           src="https://picsum.photos/200/300"
         />
         <div
-          className="inline-flex flex-col space-y-11 items-center justify-end"
+          className="blogpage-component-details inline-flex flex-col space-y-11 items-center justify-end"
           style={{
             width: 700,
             height: 549,
@@ -36,20 +39,20 @@ const BlogpageWithImageTemplate = () => {
             style={{ width: 700, height: 158 }}
           >
             <Link
-              className="h-5 text-base leading-normal text-gray-500 cursor-pointer font-body"
+              className="blogpage-component-details-back h-5 text-base leading-normal text-gray-500 cursor-pointer font-body"
               style={{ paddingTop: "1rem" }}
               to="/"
             >
               ← Back to home
             </Link>
-            <p
+            <h3
               className="text-3xl font-bold text-gray-800 font-headline"
               style={{ width: 700, height: 73, paddingTop: "1rem" }}
             >
               Is it normal to forget concepts within weeks to months?
-            </p>
+            </h3>
             <div
-              className="inline-flex space-x-8 items-center justify-end w-80 h-6"
+              className="blogpage-component-details-stats inline-flex space-x-8 items-center justify-end w-80 h-6"
               style={{ marginLeft: "1.3rem" }}
             >
               <p className="text-base leading-normal text-indigo-700 font-body">
@@ -78,11 +81,11 @@ const BlogpageWithImageTemplate = () => {
             </div>
           </div>
           <div
-            className="flex flex-col space-y-2.5 items-end justify-end"
+            className="blogpage-component-details-message flex flex-col space-y-2.5 items-end justify-end"
             style={{ width: 695, height: 188 }}
           >
             <div
-              className="inline-flex space-x-2.5 items-center justify-end"
+              className="blogpage-component-details-author inline-flex space-x-2.5 items-center justify-end"
               style={{ margin: "0 30rem" }}
             >
               <img
@@ -102,7 +105,7 @@ const BlogpageWithImageTemplate = () => {
               </div>
             </div>
             <p
-              className="text-base leading-normal text-gray-600 font-body"
+              className="blogpage-component-details-message-text text-base leading-normal text-gray-600 font-body"
               style={{
                 width: 645,
                 height: 142,
@@ -122,7 +125,7 @@ const BlogpageWithImageTemplate = () => {
             </p>
           </div>
           <div
-            className="flex flex-col space-y-4 items-start justify-end"
+            className="blogpage-component-details-message-comment flex flex-col space-y-4 items-start justify-end"
             style={{
               width: 457,
               height: 118,
@@ -159,13 +162,13 @@ const BlogpageWithImageTemplate = () => {
         </div>
 
         <p
-          className="w-40 text-2xl font-semibold text-gray-600 font-headline"
+          className="blogpage-component-details-comments-others w-40 text-2xl font-semibold text-gray-600 font-headline"
           style={{ margin: "3rem 0" }}
         >
           3 comments
         </p>
         <div
-          className="inline-flex space-x-3 items-center justify-end"
+          className="blogpage-component-details-comments-others-1 inline-flex space-x-3 items-center justify-end"
           style={{ width: 700, height: 35, marginTop: "-3rem" }}
         >
           <img
@@ -180,7 +183,7 @@ const BlogpageWithImageTemplate = () => {
               Darrell Steward
             </p>
             <p
-              className="text-base leading-normal text-gray-600 font-body"
+              className="blogpage-component-details-comments-others-2 text-base leading-normal text-gray-600 font-body"
               style={{ width: "400%" }}
             >
               Check out this article on Ebbinghaus' forgetting curve. Might give
@@ -190,13 +193,16 @@ const BlogpageWithImageTemplate = () => {
                 some examples): <br />
               </span>
               <a
-                className="text-base leading-normal underline text-indigo-700 font-body"
+                className="blogpage-component-details-comments-others-3 text-base leading-normal underline text-indigo-700 font-body"
                 href="https://www.mindtools.com/pages/article/forgetting-curve.htm"
                 style={{ margin: "0 -8.5rem" }}
               >
                 https://www.mindtools.com/pages/article/forgetting-curve.htm
               </a>
-              <div className="space-x-2.5" style={{ margin: "1rem -8.5rem" }}>
+              <div
+                className="blogpage-component-details-comments-others-4 space-x-2.5"
+                style={{ margin: "1rem -8.5rem" }}
+              >
                 <a
                   className="w-8 text-base leading-normal text-gray-500 font-body"
                   href="#"
@@ -221,7 +227,7 @@ const BlogpageWithImageTemplate = () => {
         </div>
 
         <div
-          className="relative"
+          className="blogpage-component-details-comments-others-5 relative"
           style={{ width: 655, height: 138, margin: "6rem 2rem" }}
         >
           <p
@@ -271,7 +277,7 @@ const BlogpageWithImageTemplate = () => {
         </div>
 
         <div
-          className="relative"
+          className="blogpage-component-details-comments-others-5 relative"
           style={{ width: 655, height: 138, margin: "-4rem 2rem" }}
         >
           <p
@@ -315,7 +321,7 @@ const BlogpageWithImageTemplate = () => {
         </div>
 
         <div
-          className="inline-flex flex-col space-y-8 items-center justify-end w-80 absolute"
+          className="blogpage-component-recent-topics inline-flex flex-col space-y-8 items-center justify-end w-80 absolute"
           style={{ top: "7rem", marginLeft: "60rem" }}
         >
           <div className="inline-flex space-x-4 items-center justify-end w-72 h-10">
@@ -360,8 +366,12 @@ const BlogpageWithImageTemplate = () => {
         </div>
 
         <div style={{ marginTop: "-20rem", marginLeft: "-16rem" }}>
-          <RecentTopicsComponent />
-          <FooterComponent />
+          <div className="blogpage-component-recent-topics">
+            <RecentTopicsComponent />
+          </div>
+          <div className="blogpage-component-footer">
+            <FooterComponent />
+          </div>
         </div>
       </div>
     </div>

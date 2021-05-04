@@ -3,10 +3,12 @@ import React from "react"
 import HashIcon from "@heroicons/react/outline/HashtagIcon"
 import ChatIcon from "@heroicons/react/outline/ChatAlt2Icon"
 
+import "../components.styles.css"
+
 export default function ThreadsAndDiscussionsComponent() {
   return (
     <div
-      className="inline-flex flex-col space-y-8 items-center justify-end w-80 float-right absolute"
+      className="recent-topics inline-flex flex-col space-y-8 items-center justify-end w-80 float-right absolute"
       style={{ marginLeft: "76rem", marginTop: "-38.5rem" }}
     >
       <div className="inline-flex space-x-4 items-center justify-end w-72 h-10">

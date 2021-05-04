@@ -8,10 +8,12 @@ import JobIcon from "@heroicons/react/outline/BriefcaseIcon"
 import ChatIcon from "@heroicons/react/outline/ChatIcon"
 import BlogIcon from "@heroicons/react/outline/NewspaperIcon"
 
+import "../components.styles.css"
+
 export default function ThreadsAndDiscussionsComponent() {
   return (
     <div
-      className="inline-flex flex-col space-y-8 items-center justify-end w-80 h-64"
+      className="categories-component inline-flex flex-col space-y-8 items-center justify-end w-80 h-64"
       style={{ marginLeft: "76rem" }}
     >
       <div className="inline-flex space-x-4 items-center justify-end w-72 h-10">

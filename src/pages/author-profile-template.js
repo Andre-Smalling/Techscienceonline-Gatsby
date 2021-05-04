@@ -1,20 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import HeaderComponent from "../components/Header/Header.component"
-import TrendingComponent from "../components/TrendingComponent/TrendingComponent"
-
-import InfoIcon from "@heroicons/react/outline/InformationCircleIcon"
 import CalenderIcon from "@heroicons/react/outline/CalendarIcon"
 import ChatIcon from "@heroicons/react/outline/ChatAlt2Icon"
+import InfoIcon from "@heroicons/react/outline/InformationCircleIcon"
 import FilledChatIcon from "@heroicons/react/solid/ChatAlt2Icon"
+import { Link } from "gatsby"
+import React from "react"
+import HeaderComponent from "../components/Header/Header.component"
+import TrendingComponent from "../components/TrendingComponent/TrendingComponent"
+import "./author-profile.css"
 
 const AuthorProfileTemplate = () => {
   return (
     <div className="bg-gray-50">
       <HeaderComponent />
       <div
-        className="relative"
+        className="author-sidebar relative"
         style={{
           width: 517,
           height: 1268,
@@ -81,7 +80,7 @@ const AuthorProfileTemplate = () => {
                 </p>
               </div>
               <p
-                className="text-2xl leading-9 text-gray-600 font-body"
+                className="author-sidebar-about text-2xl leading-9 text-gray-600 font-body"
                 style={{ width: 416, height: 182 }}
               >
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -93,14 +92,14 @@ const AuthorProfileTemplate = () => {
               className="flex flex-col space-y-5 justify-end"
               style={{ width: 416, height: 87 }}
             >
-              <div className="inline-flex space-x-2.5 items-center justify-end w-44 h-8">
+              <div className="author-sidebar-date-title inline-flex space-x-2.5 items-center justify-end w-44 h-8">
                 <CalenderIcon className="w-6 h-6 rounded-lg text-gray-500" />
                 <p className="w-36 h-full text-2xl font-semibold text-gray-600 font-headline">
                   Date joined
                 </p>
               </div>
               <p
-                className="text-2xl leading-9 text-gray-600 font-body"
+                className="author-sidebar-date-value text-2xl leading-9 text-gray-600 font-body"
                 style={{ width: 416, height: 35 }}
               >
                 10/28/12
@@ -110,14 +109,14 @@ const AuthorProfileTemplate = () => {
               className="flex flex-col space-y-5 justify-end"
               style={{ width: 416, height: 87 }}
             >
-              <div className="inline-flex space-x-2.5 items-center justify-end w-64 h-8">
+              <div className="author-sidebar-threads-title inline-flex space-x-2.5 items-center justify-end w-64 h-8">
                 <ChatIcon className="w-6 h-6 rounded-lg text-gray-500" />
                 <p className="w-56 h-full text-2xl font-semibold text-gray-600 font-headline">
                   Number of threads
                 </p>
               </div>
               <p
-                className="text-2xl leading-9 text-gray-600 font-body"
+                className="author-sidebar-threads-value text-2xl leading-9 text-gray-600 font-body"
                 style={{ width: 416, height: 35 }}
               >
                 36
@@ -128,6 +127,7 @@ const AuthorProfileTemplate = () => {
       </div>
 
       <div
+        className="author-trending"
         style={{
           position: "absolute",
           margin: "-82rem 15rem",
@@ -138,7 +138,7 @@ const AuthorProfileTemplate = () => {
       </div>
 
       <div
-        className="inline-flex flex-col space-y-8 items-center justify-end"
+        className="author-posts inline-flex flex-col space-y-8 items-center justify-end"
         style={{
           width: 1177.72,
           height: 851,
@@ -163,14 +163,14 @@ const AuthorProfileTemplate = () => {
             </p>
           </div>
           <p
-            className="text-2xl leading-9 text-gray-700 font-body"
+            className="author-posts-desc text-2xl leading-9 text-gray-700 font-body"
             style={{ width: 722, height: 40 }}
           >
             Since they joined, Cameron has posted 12 posts and 24 comments.
           </p>
         </div>
         <div
-          className="grid grid-cols-2 gap-2"
+          className="author-posts-grid grid grid-cols-2 gap-2"
           style={{ width: 1177.72, height: 724, marginLeft: "30rem" }}
         >
           <Link

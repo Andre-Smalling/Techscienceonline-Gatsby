@@ -1,0 +1,13 @@
+@media screen and (max-width: 640px) {
+  .component-heading {
+    margin-left: 8rem !important;
+  }
+
+  .recent-topics {
+    display: none;
+  }
+
+  .categories-component {
+    display: none;
+  }
+}

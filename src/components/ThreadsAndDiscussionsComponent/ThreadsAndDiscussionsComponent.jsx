@@ -1,14 +1,14 @@
-import React from "react"
-
 import ChatIcon from "@heroicons/react/outline/ChatAlt2Icon"
 import { Link } from "gatsby"
-// import FilledChatIcon from "@heroicons/react/solid/ChatAlt2Icon"
+import React from "react"
+import "./ThreadsAndDiscussionsComponent.css"
+import "./../components.styles.css"
 
 export default function ThreadsAndDiscussionsComponent() {
   return (
-    <div className="pt-60 px-80">
+    <div className="threads-discuss-component pt-60 px-80">
       <div
-        className="inline-flex space-x-4 items-center justify-end"
+        className="component-heading-threads inline-flex space-x-4 items-center justify-end"
         style={{ marginBottom: "1rem" }}
       >
         <ChatIcon className="w-10 h-10 text-gray-500" />
@@ -17,15 +17,13 @@ export default function ThreadsAndDiscussionsComponent() {
         </p>
       </div>
 
-      <div className="relative">
+      <div className="threads-discuss-component-card relative">
         <div
-          className="absolute left-0 top-0 bg-white shadow rounded"
+          className="threads-discuss-component-card-inner absolute left-0 top-0 bg-white shadow rounded"
           style={{ width: 800, height: 220 }}
-        >
-          {/* <FilledChatIcon className="w-64 h-56 text-gray-50" /> */}
-        </div>
+        ></div>
         <div
-          className="inline-flex space-x-72 items-center justify-end absolute py-6"
+          className="threads-discuss-component-card-inner-top inline-flex space-x-72 items-center justify-end absolute py-6"
           style={{ paddingLeft: "1rem" }}
         >
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
@@ -51,12 +49,12 @@ export default function ThreadsAndDiscussionsComponent() {
         </div>
 
         <Link
-          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
+          className="threads-discuss-component-card-inner-link inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
           to="/blogpage-with-image-template"
         >
-          <p className="text-2xl font-semibold text-gray-700 font-headline">
+          <h4 className="text-2xl font-semibold text-gray-700 font-headline">
             Any idea about the award scholarship from Zeqr?
-          </p>
+          </h4>
           <p
             className="text-base leading-normal text-gray-500 font-body"
             style={{ width: 583, height: 46 }}
@@ -69,15 +67,16 @@ export default function ThreadsAndDiscussionsComponent() {
       </div>
 
       {/* CARD 2 */}
-      <div className="relative" style={{ marginTop: "17rem" }}>
+      <div
+        className="threads-discuss-component-card relative"
+        style={{ marginTop: "17rem" }}
+      >
         <div
-          className="absolute left-0 top-0 bg-white shadow rounded"
+          className="threads-discuss-component-card-inner absolute left-0 top-0 bg-white shadow rounded"
           style={{ width: 800, height: 220 }}
-        >
-          {/* <FilledChatIcon className="w-64 h-56 text-gray-50" /> */}
-        </div>
+        ></div>
         <div
-          className="inline-flex space-x-72 items-center justify-end absolute py-6"
+          className="threads-discuss-component-card-inner-top inline-flex space-x-72 items-center justify-end absolute py-6"
           style={{ paddingLeft: "1rem" }}
         >
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
@@ -103,12 +102,12 @@ export default function ThreadsAndDiscussionsComponent() {
         </div>
 
         <Link
-          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6 cursor-pointer"
+          className="threads-discuss-component-card-inner-link inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6 cursor-pointer"
           to="/blogpage-with-image-template"
         >
-          <p className="text-2xl font-semibold text-gray-700 font-headline">
+          <h4 className="text-2xl font-semibold text-gray-700 font-headline">
             Is it normal to forget concepts within weeks to months?
-          </p>
+          </h4>
           <p
             className="text-base leading-normal text-gray-500 font-body"
             style={{ width: 583, height: 46 }}
@@ -121,15 +120,16 @@ export default function ThreadsAndDiscussionsComponent() {
       </div>
 
       {/* CARD 3 */}
-      <div className="relative" style={{ marginTop: "34rem" }}>
+      <div
+        className="threads-discuss-component-card relative"
+        style={{ marginTop: "34rem" }}
+      >
         <div
-          className="absolute left-0 top-0 bg-white shadow rounded"
+          className="threads-discuss-component-card-inner absolute left-0 top-0 bg-white shadow rounded"
           style={{ width: 800, height: 220 }}
-        >
-          {/* <FilledChatIcon className="w-64 h-56 text-gray-50" /> */}
-        </div>
+        ></div>
         <div
-          className="inline-flex space-x-72 items-center justify-end absolute py-6"
+          className="threads-discuss-component-card-inner-top inline-flex space-x-72 items-center justify-end absolute py-6"
           style={{ paddingLeft: "1rem" }}
         >
           <div className="flex space-x-2.5 items-center justify-end w-1/2 h-full">
@@ -155,12 +155,12 @@ export default function ThreadsAndDiscussionsComponent() {
         </div>
 
         <Link
-          className="inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
+          className="threads-discuss-component-card-inner-link inline-flex flex-col space-y-4 items-center justify-end absolute py-24 px-6"
           to="/blogpage-with-image-template"
         >
-          <p className="text-2xl font-semibold text-gray-700 font-headline">
+          <h4 className="text-2xl font-semibold text-gray-700 font-headline">
             The new added Classroom management for subs.
-          </p>
+          </h4>
           <p
             className="text-base leading-normal text-gray-500 font-body"
             style={{ width: 583, height: 46 }}

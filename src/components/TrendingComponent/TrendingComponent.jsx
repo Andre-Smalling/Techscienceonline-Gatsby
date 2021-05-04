@@ -1,7 +1,8 @@
-import React from "react"
-
 import TrendingIcon from "@heroicons/react/outline/TrendingUpIcon"
 import { Link } from "gatsby"
+import React from "react"
+import "./TrendingComponent.css"
+import "./../components.styles.css"
 
 export default function TrendingComponent() {
   return (
@@ -10,7 +11,7 @@ export default function TrendingComponent() {
       style={{ width: "max-content" }}
     >
       <div
-        className="flex space-x-4 items-center"
+        className="component-heading flex space-x-4 items-center"
         style={{ marginTop: "2rem", marginLeft: "20.5rem" }}
       >
         <TrendingIcon className="w-10 h-10 rounded-lg text-gray-500" />
@@ -18,7 +19,7 @@ export default function TrendingComponent() {
           Trending now
         </p>
         <Link
-          className="h-5 text-base leading-normal text-right text-indigo-700 font-body"
+          className="see-all-link h-5 text-base leading-normal text-right text-indigo-700 font-body"
           style={{ marginLeft: "auto" }}
           to="/tags-page"
         >
@@ -26,9 +27,15 @@ export default function TrendingComponent() {
         </Link>
       </div>
 
-      <div className="flex" style={{ marginLeft: "20rem", marginTop: "2rem" }}>
+      <div
+        className="trending-cards-container flex"
+        style={{ marginLeft: "20rem", marginTop: "2rem" }}
+      >
         {/* First card */}
-        <Link className="px-4" to="/blogpage-with-image-template">
+        <Link
+          className="trending-cards-container-card px-4"
+          to="/blogpage-with-image-template"
+        >
           <div className="w-16 h-6 bg-cover">
             <div className="flex items-center justify-center flex-1 h-full px-1.5 py-0.5 bg-gray-800 rounded">
               <p className="flex-1 h-full text-base leading-normal text-gray-200 font-body">
@@ -47,7 +54,10 @@ export default function TrendingComponent() {
             Taking notes when you are not focussed.
           </p>
         </Link>
-        <Link className="px-4" to="/blogpage-with-image-template">
+        <Link
+          className="trending-cards-container-card px-4"
+          to="/blogpage-with-image-template"
+        >
           <div className="w-16 h-6">
             <div className="flex items-center justify-center flex-1 h-full px-1.5 py-0.5 bg-gray-800 rounded">
               <p className="flex-1 h-full text-base leading-normal text-gray-200 font-body">
@@ -66,7 +76,10 @@ export default function TrendingComponent() {
             Derivating quadratic equations with elimination.
           </p>
         </Link>
-        <Link className="px-4" to="/blogpage-with-image-template">
+        <Link
+          className="trending-cards-container-card px-4"
+          to="/blogpage-with-image-template"
+        >
           <div className="w-16 h-6">
             <div className="flex items-center justify-center flex-1 h-full px-1.5 py-0.5 bg-gray-800 rounded">
               <p className="flex-1 h-full text-base leading-normal text-gray-200 font-body">

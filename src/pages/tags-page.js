@@ -1,8 +1,8 @@
-import React from "react"
-
-import HeaderComponent from "../components/Header/Header.component"
 import HashIcon from "@heroicons/react/outline/HashtagIcon"
 import { Link } from "gatsby"
+import React from "react"
+import HeaderComponent from "../components/Header/Header.component"
+import "./tags-page.css"
 
 const TagsPage = () => {
   return (
@@ -22,13 +22,13 @@ const TagsPage = () => {
           Popular across the platform
         </p>
 
-        <div className="grid grid-cols-5 gap-4">
+        <div className="tags-cards grid grid-cols-5 gap-4">
           <div
             className="inline-flex space-x-10 items-center justify-end"
             style={{ width: 1713, height: 198 }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               style={{ margin: "20rem 10rem" }}
               to="/blogpage-with-image-template"
             >
@@ -54,7 +54,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 22rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
@@ -79,7 +79,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 44rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
@@ -104,7 +104,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 66rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
@@ -141,7 +141,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198 }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               style={{ margin: "1rem 10rem" }}
               to="/blogpage-with-image-template"
             >
@@ -167,7 +167,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 32rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
@@ -192,7 +192,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 54rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
@@ -217,7 +217,7 @@ const TagsPage = () => {
             style={{ width: 1713, height: 198, margin: "1rem 76rem" }}
           >
             <Link
-              className="w-80 h-48 absolute left-0 top-0 shadow rounded"
+              className="w-80 h-48 absolute left-0 top-0 shadow rounded hover:-translate-y-0.5 hover:shadow-xl transition transform"
               to="/blogpage-with-image-template"
             >
               <img
