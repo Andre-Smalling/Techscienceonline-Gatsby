@@ -40,10 +40,10 @@ export default function TrendingComponent() {
             className="lg:w-80 h-72 rounded object-cover md:w-4/5 sm:w-3/4"
             src="https://picsum.photos/200/300"
           />
-          <p className="w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
+          <p className="trending-cards-container-card-author w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
             Annette Black
           </p>
-          <p className="lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline lg:w-64 sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
+          <p className="trending-cards-container-card-title lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline lg:w-64 sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
             Taking notes when you are not focussed.
           </p>
         </Link>
@@ -62,10 +62,10 @@ export default function TrendingComponent() {
             className="lg:w-96 h-72 rounded object-cover md:w-4/5 sm:w-3/4"
             src="https://picsum.photos/200/300"
           />
-          <p className="w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
+          <p className="trending-cards-container-card-author w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
             Kathryn Murphy
           </p>
-          <p className="lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
+          <p className="trending-cards-container-card-title lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
             Derivating quadratic equations with elimination.
           </p>
         </Link>
@@ -84,10 +84,10 @@ export default function TrendingComponent() {
             className="lg:w-80 h-72 rounded object-cover md:w-4/5 sm:w-3/4"
             src="https://picsum.photos/200/300"
           />
-          <p className="w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
+          <p className="trending-cards-container-card-author w-44 h-5 text-base leading-normal text-gray-700 font-body sm:mx-0 sm:my-2 md:mx-0 md:my-4 lg:m-0">
             Darrell Steward
           </p>
-          <p className="lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
+          <p className="trending-cards-container-card-title lg:w-64 h-14 text-2xl font-semibold text-gray-800 font-headline sm:w-3/4 md:w-3/4 sm:mb-8 md:mb-10">
             Are you overpowering in your studies?
           </p>
         </Link>

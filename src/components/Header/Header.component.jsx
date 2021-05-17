@@ -7,7 +7,7 @@ import "./Header.css"
 // The `Header` components features the searchbar and right navigation
 export default function Header() {
   return (
-    <div className="header-component flex space-x-80 items-center justify-end py-4 bg-white shadow rounded font-body lg:mx-40">
+    <div className="header-component flex space-x-80 items-center justify-end py-4 bg-white shadow rounded font-body">
       <Link
         to="/"
         className="header-component-logo md:mx-auto sm:mx-auto md:mt-0 sm:mt-0"

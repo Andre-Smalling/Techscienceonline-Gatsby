@@ -1,0 +1,17 @@
+/* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .header-component {
+    display: block;
+    margin: 0;
+  }
+
+  .header-component-logo {
+    display: block;
+    margin: 0 12rem;
+  }
+
+  .header-component-search,
+  .header-component-btn {
+    display: none;
+  }
+}

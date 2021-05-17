@@ -1,1 +1,20 @@
 /* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .component-heading,
+  .trending-cards-container {
+    margin: 1rem 8rem;
+  }
+
+  .trending-cards-container-card img {
+    width: 60%;
+  }
+
+  .trending-cards-container-card-author {
+    margin: 0.5rem 0;
+  }
+
+  .trending-cards-container-card-title {
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+}
