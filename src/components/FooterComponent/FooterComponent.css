@@ -1,0 +1,7 @@
+/* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .footer-component {
+    margin: 2rem 3rem;
+    width: 50%;
+  }
+}

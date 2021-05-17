@@ -8,18 +8,31 @@
     font-size: 1.5rem !important;
   }
 
+  input {
+    margin-right: 10rem !important;
+    padding-right: 5rem !important;
+  }
+
+  .blogpage-component-details-message {
+    padding: 0 5rem;
+  }
+
   .blogpage-component-details-message-text {
     width: 60% !important;
     padding: 0;
-    margin: 1rem 17rem !important;
+    margin: 1rem 18rem !important;
   }
 
   .blogpage-component-details-message-comment {
-    margin-top: 8rem !important;
+    margin-top: 12rem !important;
   }
 
   .comments {
     margin: 3rem 0;
+  }
+
+  .blogpage-component-details-author {
+    margin: 0 25rem !important;
   }
 
   .blogpage-component-details-comments-others {
@@ -33,11 +46,12 @@
 
   .blogpage-component-details-comments-others-5,
   .blogpage-component-recent-topics,
-  .blogpage-component-details-comments-others-4 {
+  .blogpage-component-details-comments-others-4,
+  .comments {
     display: none;
   }
 
   .footer {
-    margin: 10rem 6rem;
+    width: 150%;
   }
 }

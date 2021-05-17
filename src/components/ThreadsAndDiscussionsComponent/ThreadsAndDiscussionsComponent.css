@@ -1,7 +1,8 @@
 /* TABLETS SMALL */
 @media screen and (max-width: 640px) {
   .threads-discuss-component {
-    padding: 5rem;
+    margin: 0 auto;
+    width: fit-content;
   }
 
   .threads-discuss-component-card:nth-child(2),

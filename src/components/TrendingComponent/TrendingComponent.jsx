@@ -6,17 +6,14 @@ import "./TrendingComponent.css"
 
 export default function TrendingComponent() {
   return (
-    <div
-      className="items-center justify-end h-full pt-4 pb-4"
-      style={{ width: "max-content" }}
-    >
+    <div className="trending items-center justify-end h-full pt-4 pb-4">
       <div className="component-heading flex items-center lg:ml-80 md:mx-52 sm:mx-44 md:mt-8">
         <TrendingIcon className="w-10 h-10 rounded-lg text-gray-500 sm:mr-2 md:mr-2" />
         <p className="w-56 h-full text-3xl font-bold font-headline text-gray-700">
           Trending now
         </p>
         <Link
-          className="see-all-link h-5 text-base leading-normal text-right text-indigo-700 font-body lg:ml-auto"
+          className="trending-link see-all-link h-5 text-base leading-normal text-right text-indigo-700 font-body lg:ml-auto"
           to="/tags-page"
         >
           See all

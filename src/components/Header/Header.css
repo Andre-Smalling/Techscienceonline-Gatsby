@@ -1,13 +1,13 @@
 /* SMALL PHONES */
 @media screen and (max-width: 640px) {
   .header-component {
+    margin: 0 auto;
     display: block;
-    margin: 0;
   }
 
-  .header-component-logo {
+  .header-component-logo img {
     display: block;
-    margin: 0 12rem;
+    margin: 0 auto;
   }
 
   .header-component-search,
