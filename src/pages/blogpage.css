@@ -4,8 +4,9 @@
   }
 
   h3 {
-    width: 55% !important;
-    font-size: 1.5rem !important;
+    width: 50% !important;
+    font-size: 1.3rem !important;
+    line-height: 2rem !important;
   }
 
   input {
@@ -29,6 +30,10 @@
 
   .comments {
     margin: 3rem 0;
+  }
+
+  .blog-stats {
+    margin: auto;
   }
 
   .blogpage-component-details-author {

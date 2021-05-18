@@ -1,8 +1,12 @@
-/* TABLETS SMALL */
+/* PHONES SMALL */
 @media screen and (max-width: 640px) {
   .threads-discuss-component {
     margin: 0 auto;
     width: fit-content;
+  }
+
+  .component-heading-threads p {
+    font-size: x-large;
   }
 
   .threads-discuss-component-card:nth-child(2),
@@ -16,7 +20,6 @@
 
   .threads-discuss-component-card-inner-link {
     padding-left: 1rem;
-    padding-top: 7rem;
   }
 
   .threads-discuss-component-card-inner-link p {

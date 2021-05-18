@@ -5,6 +5,11 @@
     width: 50%;
   }
 
+  .component-heading p {
+    font-size: x-large;
+    margin-left: 0.4rem;
+  }
+
   .trending-link {
     display: none;
   }
@@ -19,5 +24,12 @@
 
   .trending-cards-container-card-title {
     margin-bottom: 4rem;
+  }
+}
+
+/* SMALL TABLETS */
+@media screen and (min-width: 768px) {
+  .trending {
+    margin: 0 auto;
   }
 }

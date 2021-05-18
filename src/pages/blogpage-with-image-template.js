@@ -54,7 +54,7 @@ const BlogpageWithImageTemplate = () => {
               <p className="text-base leading-normal text-indigo-700 font-body">
                 #learning
               </p>
-              <div className="flex space-x-5 items-center justify-end w-60 h-full">
+              <div className="blog-stats flex space-x-5 items-center justify-end w-60 h-full">
                 <div className="flex space-x-1.5 items-center justify-end w-16 h-full">
                   <ShareIcon className="text-gray-600" />
                   <p className="w-2/3 text-base leading-normal text-gray-600 font-body">
