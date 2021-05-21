@@ -4,8 +4,8 @@
   }
 
   h3 {
-    width: 50% !important;
-    font-size: 1.3rem !important;
+    width: 70% !important;
+    font-size: 1.5rem !important;
     line-height: 2rem !important;
   }
 
@@ -19,13 +19,12 @@
   }
 
   .blogpage-component-details-message-text {
-    width: 60% !important;
-    padding: 0;
-    margin: 1rem 18rem !important;
+    width: 70% !important;
+    margin: 1rem 15rem !important;
   }
 
   .blogpage-component-details-message-comment {
-    margin-top: 12rem !important;
+    margin-top: 8rem !important;
   }
 
   .comments {

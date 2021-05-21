@@ -1,0 +1,59 @@
+/* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .author-sidebar {
+    margin: 0 auto !important;
+  }
+
+  .author-sidebar-left {
+    margin: 5rem auto;
+  }
+
+  .author-sidebar-about {
+    text-align: center;
+  }
+
+  .author-sidebar-container {
+    width: auto !important;
+  }
+
+  .author-stats {
+    display: block;
+    text-align: center;
+  }
+
+  .author-trending-new {
+    display: none;
+  }
+
+  .author-posts {
+    display: block;
+    margin: 0 !important;
+    width: auto !important;
+  }
+
+  .author-posts-grid {
+    display: block;
+    margin-left: 0 !important;
+  }
+
+  .author-posts-container {
+    padding-left: 0 !important;
+  }
+
+  .author-posts-container svg {
+    display: none;
+  }
+
+  .author-posts-container p {
+    font-size: x-large;
+  }
+
+  .author-posts-desc {
+    display: none;
+  }
+
+  .author-sidebar-date-container,
+  .author-sidebar-threads-container {
+    display: block;
+  }
+}

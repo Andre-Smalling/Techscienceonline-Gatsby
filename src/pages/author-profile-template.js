@@ -22,13 +22,10 @@ const AuthorProfileTemplate = () => {
         }}
       >
         <div
-          className="absolute left-0 top-0 bg-white shadow rounded"
+          className="author-sidebar-container absolute left-0 top-0 bg-white shadow rounded"
           style={{ width: 516, height: 1268 }}
         />
-        <div
-          className="inline-flex flex-col space-y-14 items-center justify-end absolute m-auto inset-0"
-          style={{ width: 517, height: 1110 }}
-        >
+        <div className="author-sidebar-left inline-flex flex-col space-y-14 items-center justify-end absolute m-auto lg:mt-10">
           <div className="flex flex-col space-y-10 items-center justify-end w-80">
             <img
               className="w-72 h-72 shadow rounded-3xl object-cover object-center"
@@ -66,7 +63,7 @@ const AuthorProfileTemplate = () => {
             style={{ width: 517, height: 1 }}
           />
           <div
-            className="flex flex-col space-y-10 items-center justify-end"
+            className="author-stats flex flex-col space-y-10 items-center justify-end"
             style={{ width: 416, height: 488 }}
           >
             <div
@@ -89,7 +86,7 @@ const AuthorProfileTemplate = () => {
               </p>
             </div>
             <div
-              className="flex flex-col space-y-5 justify-end"
+              className="author-sidebar-date-container flex flex-col space-y-5 justify-end"
               style={{ width: 416, height: 87 }}
             >
               <div className="author-sidebar-date-title inline-flex space-x-2.5 items-center justify-end w-44 h-8">
@@ -106,7 +103,7 @@ const AuthorProfileTemplate = () => {
               </p>
             </div>
             <div
-              className="flex flex-col space-y-5 justify-end"
+              className="author-sidebar-threads-container flex flex-col space-y-5 justify-end"
               style={{ width: 416, height: 87 }}
             >
               <div className="author-sidebar-threads-title inline-flex space-x-2.5 items-center justify-end w-64 h-8">
@@ -127,7 +124,7 @@ const AuthorProfileTemplate = () => {
       </div>
 
       <div
-        className="author-trending"
+        className="author-trending-new"
         style={{
           position: "absolute",
           margin: "-82rem 15rem",
@@ -147,7 +144,7 @@ const AuthorProfileTemplate = () => {
         }}
       >
         <div
-          className="flex flex-col space-y-2.5 justify-end"
+          className="author-posts-container flex flex-col space-y-2.5 justify-end"
           style={{ width: 722, height: 97, paddingLeft: "1rem" }}
         >
           <div
@@ -187,7 +184,7 @@ const AuthorProfileTemplate = () => {
                 style={{ width: 522, height: 162 }}
               >
                 <div
-                  className="inline-flex space-x-96 items-center justify-end"
+                  className="post-info inline-flex space-x-96 items-center justify-end"
                   style={{ width: 522, height: 24 }}
                 >
                   <p className="w-1/5 text-base leading-normal text-indigo-700 font-body">
@@ -202,13 +199,13 @@ const AuthorProfileTemplate = () => {
                   style={{ width: 417, height: 128 }}
                 >
                   <p
-                    className="text-2xl font-semibold text-gray-800 font-headline"
+                    className="post-title text-2xl font-semibold text-gray-800 font-headline"
                     style={{ width: 417, height: 60 }}
                   >
                     Aqua regia dissolving gold powder.
                   </p>
                   <p
-                    className="text-lg leading-relaxed text-gray-500 font-body"
+                    className="post-para text-lg leading-relaxed text-gray-500 font-body"
                     style={{ width: 417, height: 58 }}
                   >
                     It is excellent for cleaning frits of heavy metal, as it is
