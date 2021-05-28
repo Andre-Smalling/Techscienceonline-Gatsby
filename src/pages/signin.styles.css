@@ -1,0 +1,89 @@
+/* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .logo img {
+    margin: 2rem auto !important;
+    position: inherit;
+  }
+
+  .signin-container {
+    height: 100vh !important;
+    width: min-content !important;
+    margin: 0 auto !important;
+    background-color: inherit;
+  }
+
+  .left-container,
+  .signin-other-or {
+    display: none;
+  }
+
+  .login-container {
+    position: initial;
+    height: 90vh !important;
+    width: inherit !important;
+  }
+
+  .signin-inner {
+    margin: 0 auto !important;
+    display: block !important;
+    width: initial !important;
+    text-align: center !important;
+  }
+
+  .signin-inner-text {
+    width: inherit !important;
+  }
+
+  .signin-form,
+  .signin-form-inner {
+    display: block;
+    width: initial !important;
+  }
+
+  .signin-signup {
+    font-size: 1.2rem !important;
+    margin: 7rem auto !important;
+  }
+
+  .signin-para {
+    font-size: 1.2rem !important;
+    line-height: 1.7rem !important;
+    width: initial !important;
+  }
+
+  .signin-form-column {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .signin-form-column p {
+    font-size: 1.3rem !important;
+    line-height: 1.3rem !important;
+  }
+
+  .signin-form-column input {
+    width: 95% !important;
+    height: 3rem !important;
+  }
+
+  .signin-btn-inner {
+    padding: 1rem 6rem;
+  }
+
+  .signin-btn-inner a {
+    font-size: 1.3rem;
+  }
+
+  .signin-other {
+    display: block !important;
+    width: initial !important;
+  }
+
+  .signin-other-google {
+    margin: 2rem 0;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

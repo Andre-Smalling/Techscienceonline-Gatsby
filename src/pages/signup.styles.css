@@ -1,0 +1,95 @@
+/* SMALL PHONES */
+@media screen and (max-width: 640px) {
+  .logo img {
+    margin: 2rem auto !important;
+    position: inherit;
+  }
+
+  .signup-container {
+    display: block;
+    margin: 0 auto !important;
+    width: 90vw !important;
+    text-align: center;
+  }
+
+  .signup-container-head {
+    width: inherit;
+  }
+
+  .signup-container-para {
+    font-size: 1.2rem !important;
+    line-height: 1.7rem !important;
+    width: initial !important;
+  }
+
+  .signup-container-left,
+  .signin-other-or,
+  .signup-check,
+  .signup-container-left svg {
+    display: none;
+  }
+
+  .signup-form {
+    display: block;
+    width: 70vw !important;
+    margin: 14rem auto !important;
+  }
+
+  .signup-form > div {
+    display: block;
+    width: initial !important;
+  }
+
+  .signup-form-child {
+    display: block;
+    width: initial;
+    margin: 2rem 0 !important;
+  }
+
+  .signup-form-child p,
+  .signup-btn {
+    font-size: 1.3rem !important;
+    line-height: 1.3rem !important;
+  }
+
+  .signup-form-child input {
+    width: 95% !important;
+    height: 3rem !important;
+  }
+
+  .signup-form-parent {
+    margin: 8rem 0 !important;
+  }
+
+  .signup-btn-container {
+    display: block;
+    width: 70vw !important;
+    margin: inherit !important;
+  }
+
+  .signup-btn-container > div {
+    width: inherit !important;
+    padding: 5rem 0rem;
+  }
+
+  .signup-signin {
+    font-size: 1.2rem !important;
+    margin: 5rem auto !important;
+  }
+
+  .signin-other {
+    display: block !important;
+    width: initial !important;
+  }
+
+  .signin-other-google {
+    margin: 2rem auto !important;
+  }
+
+  .signin-other-container {
+    margin: inherit !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

@@ -1,4 +1,5 @@
 import SearchIcon from "@heroicons/react/outline/SearchIcon"
+import LoginIcon from "@heroicons/react/outline/LoginIcon"
 import { Link } from "gatsby"
 import React from "react"
 import logo from "./../../images/logo/final.webp"
@@ -32,6 +33,13 @@ export default function Header() {
           className="flex items-center justify-center flex-1 h-full px-5 py-3 text-white font-body bg-indigo-700 shadow rounded hover:-translate-y-0.5 hover:bg-indigo-800 hover:shadow-md transition transform"
         >
           Login/Signup
+        </Link>
+      </div>
+
+      {/* Navigation for small screens */}
+      <div className="login-icon">
+        <Link to="/signin">
+          <LoginIcon />
         </Link>
       </div>
     </div>
