@@ -1,3 +1,7 @@
+import dotevn from "dotenv"
+
+dotevn.config({ path: ".env" })
+
 module.exports = {
   siteMetadata: {
     title: `Techscienceonline Forum`,
@@ -15,6 +19,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -39,6 +44,17 @@ module.exports = {
         rule: {
           include: /vectors/,
         },
+      },
+    },
+    // Gatsby Sanity plugin which is used to fetch the Sanity backend data to Gatsby frontend
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `lg9ohmgo`,
+        dataset: `production`,
+        // This is used to have real-time editing enabled as what we change on Sanity, it will automatically build in Gatsby
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
       },
     },
   ],
