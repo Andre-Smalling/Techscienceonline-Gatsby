@@ -36,6 +36,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -61,6 +62,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -86,6 +88,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -111,6 +114,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -149,6 +153,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -174,6 +179,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -199,6 +205,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"
@@ -224,6 +231,7 @@ const TagsPage = () => {
                 className="relative rounded object-cover object-center"
                 style={{ width: "100%", height: "12.4rem" }}
                 src="https://picsum.photos/200/300"
+                alt="tag graphic"
               />
               <div
                 className="w-full absolute left-0 top-0 bg-gradient-to-b from-gray-800 to-gray-800 rounded opacity-80"

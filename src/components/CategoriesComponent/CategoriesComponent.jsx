@@ -1,13 +1,11 @@
-import React from "react"
-
-import CollectionIcon from "@heroicons/react/outline/CollectionIcon"
-import ClockIcon from "@heroicons/react/outline/ClockIcon"
-import PhotoIcon from "@heroicons/react/outline/PhotographIcon"
-import GroupIcon from "@heroicons/react/outline/UserGroupIcon"
 import JobIcon from "@heroicons/react/outline/BriefcaseIcon"
 import ChatIcon from "@heroicons/react/outline/ChatIcon"
+import ClockIcon from "@heroicons/react/outline/ClockIcon"
+import CollectionIcon from "@heroicons/react/outline/CollectionIcon"
 import BlogIcon from "@heroicons/react/outline/NewspaperIcon"
-
+import PhotoIcon from "@heroicons/react/outline/PhotographIcon"
+import GroupIcon from "@heroicons/react/outline/UserGroupIcon"
+import React from "react"
 import "../components.styles.css"
 
 export default function ThreadsAndDiscussionsComponent() {

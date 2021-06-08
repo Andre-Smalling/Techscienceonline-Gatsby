@@ -23,6 +23,7 @@ const SignUp = () => {
             className="w-40 h-15 absolute"
             src={logo}
             style={{ margin: "2rem 53rem" }}
+            alt="Techscienceonline logo"
           />
         </Link>
       </div>

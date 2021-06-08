@@ -1,8 +1,8 @@
 import ChatIcon from "@heroicons/react/outline/ChatAlt2Icon"
 import { Link } from "gatsby"
 import React from "react"
-import "./ThreadsAndDiscussionsComponent.css"
 import "./../components.styles.css"
+import "./ThreadsAndDiscussionsComponent.css"
 
 export default function ThreadsAndDiscussionsComponent() {
   return (

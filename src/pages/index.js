@@ -1,27 +1,12 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-
-// import "./index.css"
-
-import LayoutComponent from "../components/Layout/Layout.component"
-
-import HeaderComponent from "../components/Header/Header.component"
-
-import TrendingComponent from "../components/TrendingComponent/TrendingComponent"
-
-import ThreadsAndDiscussionsComponent from "../components/ThreadsAndDiscussionsComponent/ThreadsAndDiscussionsComponent"
-
-import RecentTopicsComponent from "../components/RecentTopicsComponent/RecentTopicsComponent"
-
 import CategoriesComponent from "../components/CategoriesComponent/CategoriesComponent"
-
 import FooterComponent from "../components/FooterComponent/FooterComponent"
-
-import SidebarComponent from "../components/Sidebar/Sidebar.component"
-
-import ForumComponent from "../components/Forum/Forum.component"
-
-import RightbarComponent from "../components/Rightbar/Rightbar.component"
+import HeaderComponent from "../components/Header/Header.component"
+import LayoutComponent from "../components/Layout/Layout.component"
+import RecentTopicsComponent from "../components/RecentTopicsComponent/RecentTopicsComponent"
+import ThreadsAndDiscussionsComponent from "../components/ThreadsAndDiscussionsComponent/ThreadsAndDiscussionsComponent"
+import TrendingComponent from "../components/TrendingComponent/TrendingComponent"
 
 // The homepage component which renders all other sub-components
 const Home = () => (
@@ -51,9 +36,6 @@ const Home = () => (
       <RecentTopicsComponent />
       <CategoriesComponent />
       <FooterComponent />
-      {/* <SidebarComponent /> */}
-      {/* <ForumComponent /> */}
-      {/* <RightbarComponent /> */}
     </div>
   </LayoutComponent>
 )

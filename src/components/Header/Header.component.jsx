@@ -1,5 +1,5 @@
-import SearchIcon from "@heroicons/react/outline/SearchIcon"
 import LoginIcon from "@heroicons/react/outline/LoginIcon"
+import SearchIcon from "@heroicons/react/outline/SearchIcon"
 import { Link } from "gatsby"
 import React from "react"
 import logo from "./../../images/logo/final.webp"
