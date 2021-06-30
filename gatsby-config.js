@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: `lg9ohmgo`,
+        projectId: `kcm6olxr`,
         dataset: `production`,
         // This is used to have real-time editing enabled as what we change on Sanity, it will automatically build in Gatsby
         watchMode: true,

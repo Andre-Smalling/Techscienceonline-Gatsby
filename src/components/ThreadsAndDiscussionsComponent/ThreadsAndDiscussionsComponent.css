@@ -1,37 +1,16 @@
 /* PHONES SMALL */
 @media screen and (max-width: 640px) {
-  .threads-discuss-component {
-    margin: 0 auto;
-    width: fit-content;
+  .threads-cards {
+    width: 75% !important;
+    margin: 5rem auto;
   }
 
-  .component-heading-threads p {
-    font-size: x-large;
-  }
-
-  .threads-discuss-component-card:nth-child(2),
-  .threads-discuss-component-card-inner {
-    margin: 2rem 0;
-  }
-
-  .threads-discuss-component-card-inner-top {
-    padding: 3rem !important;
-  }
-
-  .threads-discuss-component-card-inner-link {
-    padding-left: 1rem;
-  }
-
-  .threads-discuss-component-card-inner-link p {
+  .threads-cards-excerpt,
+  .threads-cards-time {
     display: none;
   }
 
-  .threads-discuss-component-card-inner {
-    width: 100% !important;
-  }
-
-  h4 {
-    font-size: 1.3rem !important;
-    margin: 2rem 1rem;
+  .threads-cards-heading {
+    font-size: 1.2rem;
   }
 }

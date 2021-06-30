@@ -1,77 +1,71 @@
-// const path = require("path")
+import path from "path"
 
-// // Function to create Individual blog pages
-// exports.createPages = ({ boundActionCreators, graphql }) => {
-//   const { createPage } = boundActionCreators
-//   const postTemplate = path.resolve(
-//     "./src/templates/BlogTemplate/blogTemplate.js"
-//   )
+async function turnPostsIntoPages({ graphql, actions }) {
+  // Get a template for this page
+  const postTemplate = path.resolve("./src/templates/Posts.js")
 
-//   return graphql(`
-//     {
-//       allMarkdownRemark {
-//         edges {
-//           node {
-//             frontmatter {
-//               path
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `).then(res => {
-//     if (res.errors) {
-//       return Promise.reject(res.errors)
-//     }
-//     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//       createPage({
-//         path: node.frontmatter.path,
-//         component: postTemplate,
-//       })
-//     })
-//   })
-// }
+  // Query all posts
+  const { data } = await graphql(`
+    query {
+      posts: allSanityPost {
+        nodes {
+          title
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `)
+  console.log(data.posts.nodes)
 
-// // Pagination function
-// async function turnForumIntoPages({ graphql, actions }) {
-//   // 1. Query all Forum
-//   const { data } = await graphql(`
-//     query {
-//       forumContent: allMarkdownRemark {
-//         totalCount
-//         nodes {
-//           id
-//           frontmatter {
-//             title
-//             path
-//           }
-//         }
-//       }
-//     }
-//   `)
+  // Loop over each posts
+  data.posts.nodes.forEach(post => {
+    console.log("Creating a page for ", post.title)
+    actions.createPage({
+      // URL for the new page
+      path: `thread/${post.slug.current}`,
+      component: postTemplate,
+      context: {
+        slug: post.slug.current,
+      },
+    })
+  })
+}
 
-//   // 2. Figure out how many pages are there based on the number of forum content and how many per page
-//   const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE)
-//   const pageCount = Math.ceil(data.forumContent.totalCount / pageSize)
+async function turnAuthorsIntoPages({ graphql, actions }) {
+  // Get a template for this page
+  const authorTemplate = path.resolve("./src/templates/Authors.js")
 
-//   // 3. Loop from 1 to n and create pages for each of them
-//   Array.from({ length: pageCount }).forEach((_, i) => {
-//     actions.createPage({
-//       path: `/forum/${i + 1}`,
-//       component: path.resolve("./src/pages/forumContent.js"),
+  // Query all posts
+  const { data } = await graphql(`
+    query {
+      authors: allSanityAuthor {
+        nodes {
+          name
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `)
+  console.log(data.authors.nodes)
 
-//       //? This data is passed to the template when we create it
-//       context: {
-//         skip: i * pageSize,
-//         currentPage: i + 1,
-//         pageSize,
-//       },
-//     })
-//   })
-// }
+  // Loop over each authors
+  data.authors.nodes.forEach(author => {
+    console.log("Creating a page for ", author.name)
+    actions.createPage({
+      // URL for the new author
+      path: `author/${author.slug.current}`,
+      component: authorTemplate,
+      context: {
+        slug: author.slug.current,
+      },
+    })
+  })
+}
 
-// //? `createPages` is a Gatsby extension point/Hook which tells plugins to add pages.
-// async function createPages(params) {
-//   // Create pages dynamically and concurrently at the same time
-//   await Promise.all([turnForumIntoPages(params)])
-// }
+export async function createPages(params) {
+  await [turnPostsIntoPages(params), turnAuthorsIntoPages(params)]
+}
