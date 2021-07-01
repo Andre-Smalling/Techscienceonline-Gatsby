@@ -42,6 +42,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "postinstall": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "develop": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
