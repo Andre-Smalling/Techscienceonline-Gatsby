@@ -5,7 +5,7 @@ import AdvertiseVector from "../images/vectors/Advertise.svg"
 import GoogleLogo from "../images/vectors/GoogleLogo.svg"
 import "./signup.styles.css"
 
-const SignUp = () => {
+export default function SignUp() {
   return (
     <div className="signup-container relative bg-gray-50">
       <div className="signup-container-left inline-flex flex-col space-y-20 items-center justify-end px-12 pt-56 absolute left-0 top-0 bg-indigo-700 h-full">
@@ -183,5 +183,3 @@ const SignUp = () => {
     </div>
   )
 }
-
-export default SignUp

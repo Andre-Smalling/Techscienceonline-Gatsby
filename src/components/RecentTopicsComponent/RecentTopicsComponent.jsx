@@ -33,7 +33,7 @@ export default function ThreadsAndDiscussionsComponent() {
   `)
 
   const postTags = data.tags.nodes
-  console.log("TAHA", postTags)
+
   return (
     <div
       className="recent-topics inline-flex flex-col space-y-8 items-center justify-end w-80 float-right absolute"

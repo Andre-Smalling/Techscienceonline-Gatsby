@@ -114,7 +114,7 @@ const SignIn = () => {
           style={{ margin: "-4rem 0rem" }}
         >
           Don’t have an account?
-          <a className="text-indigo-700 font-body" href="/signup">
+          <a className="text-indigo-700 font-body" href="">
             &nbsp;Sign up
           </a>
           .

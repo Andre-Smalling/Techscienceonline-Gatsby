@@ -35,7 +35,7 @@ const TagsPage = () => {
 
   const tags = data.tag.nodes
   const outerTags = data.tag
-  console.log("AHAH", tags)
+
   return (
     <div className="bg-gray-50 h-screen">
       <HeaderComponent />

@@ -60,8 +60,6 @@ export default function TrendingComponent() {
   `)
 
   const posts = data.trendingPosts.nodes
-  // const image = data.trendingPosts.nodes.mainImage
-  // console.log("IMG", image)
 
   return (
     <div className="trending items-center justify-end h-full pt-4 pb-4">

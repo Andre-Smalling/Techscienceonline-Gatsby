@@ -17,11 +17,9 @@ async function turnPostsIntoPages({ graphql, actions }) {
       }
     }
   `)
-  console.log(data.posts.nodes)
 
   // Loop over each posts
   data.posts.nodes.forEach(post => {
-    console.log("Creating a page for ", post.title)
     actions.createPage({
       // URL for the new page
       path: `thread/${post.slug.current}`,
@@ -50,11 +48,9 @@ async function turnAuthorsIntoPages({ graphql, actions }) {
       }
     }
   `)
-  console.log(data.authors.nodes)
 
   // Loop over each authors
   data.authors.nodes.forEach(author => {
-    console.log("Creating a page for ", author.name)
     actions.createPage({
       // URL for the new author
       path: `author/${author.slug.current}`,
