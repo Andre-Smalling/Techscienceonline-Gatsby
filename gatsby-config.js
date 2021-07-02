@@ -1,8 +1,12 @@
-import dotevn from "dotenv"
+// import dotevn from "dotenv"
 
-dotevn.config({ path: ".env" })
+// dotevn.config({ path: ".env" })
 
-export default {
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+module.exports = {
   siteMetadata: {
     title: `Techscienceonline Forum`,
     description: `A forum/blog application made with Gatsby.`,
