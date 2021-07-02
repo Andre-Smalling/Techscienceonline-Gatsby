@@ -63,6 +63,10 @@ async function turnAuthorsIntoPages({ graphql, actions }) {
   })
 }
 
-export async function createPages(params) {
+// export async function createPages(params) {
+//   await [turnPostsIntoPages(params), turnAuthorsIntoPages(params)]
+// }
+
+exports.createPages = async params => {
   await [turnPostsIntoPages(params), turnAuthorsIntoPages(params)]
 }
