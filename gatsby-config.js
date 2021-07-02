@@ -2,7 +2,7 @@ import dotevn from "dotenv"
 
 dotevn.config({ path: ".env" })
 
-module.exports = {
+export default {
   siteMetadata: {
     title: `Techscienceonline Forum`,
     description: `A forum/blog application made with Gatsby.`,
