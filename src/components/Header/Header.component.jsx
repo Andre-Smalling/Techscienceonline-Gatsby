@@ -29,7 +29,8 @@ export default function Header() {
       </div>
       <div className="header-component-btn w-36 h-11 md:hidden sm:hidden lg:block">
         <Link
-          to="/signup"
+          to="https://techscienceonline-forum.sanity.studio/desk"
+          target="_blank"
           className="flex items-center justify-center flex-1 h-full px-5 py-3 text-white font-body bg-indigo-700 shadow rounded hover:-translate-y-0.5 hover:bg-indigo-800 hover:shadow-md transition transform"
         >
           Login/Signup
@@ -38,7 +39,10 @@ export default function Header() {
 
       {/* Navigation for small screens */}
       <div className="login-icon">
-        <Link to="/signin">
+        <Link
+          to="https://techscienceonline-forum.sanity.studio/desk"
+          target="_blank"
+        >
           <LoginIcon />
         </Link>
       </div>
